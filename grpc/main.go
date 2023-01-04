@@ -9,4 +9,9 @@ func main() {
 	for i := 1; i <= 100; i++ {
 		fmt.Println(i)
 	}
+
+	var a string = "aruno nakanishi"
+	for s := 1; s <= 5; s++ {
+		fmt.Println("i love", a)
+	}
 }
