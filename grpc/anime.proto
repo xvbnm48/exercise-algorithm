@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service GetAnime {
+  rpc Get(GetRequest) returns (GetResponse) {}
+}
+
+message GetRequest {
+  int32 id = 1;
+}
+
+message GetResponse {
+  string title = 1;
+  string genre = 2;
+  int32 episodes = 3;
+  float rating = 4;
+}
