@@ -26,6 +26,6 @@ func main() {
 	} else if result == gf2 {
 		fmt.Println("yes i love her")
 	} else {
-		fmt.Println("i love sakura endo and aruno nakanishi")
+		fmt.Println("i love sakura endo and aruno nakanishi!!!!!!")
 	}
 }
