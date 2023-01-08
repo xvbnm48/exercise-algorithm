@@ -19,7 +19,7 @@ func (p Person) Greet() string {
 }
 
 func main() {
-	p := Person{"Sakura Miyawaki", 20}
+	p := Person{"Sakura endo", 20}
 	p.Birthday()
 	fmt.Println(p.Greet())
 }
