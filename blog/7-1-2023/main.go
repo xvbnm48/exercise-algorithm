@@ -22,4 +22,7 @@ func main() {
 	p := Person{"Sakura endo", 20}
 	p.Birthday()
 	fmt.Println(p.Greet())
+	l := Person{"Nabirra", 16}
+	l.Birthday()
+	fmt.Println(l.Greet())
 }
