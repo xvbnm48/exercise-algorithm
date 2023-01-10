@@ -25,4 +25,5 @@ func main() {
 	l := Person{"Nabirra", 16}
 	l.Birthday()
 	fmt.Println(l.Greet())
+	fmt.Println(p, l)
 }
