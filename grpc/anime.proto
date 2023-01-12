@@ -2,6 +2,8 @@ syntax = "proto3";
 
 service GetAnime {
   rpc Get(GetRequest) returns (GetResponse) {}
+  rpc GetList(GetListRequest) returns (GetListResponse) {}
+  rpc GetListStream(GetListRequest) returns (stream GetResponse) {}
 }
 
 message GetRequest {
@@ -14,3 +16,14 @@ message GetResponse {
   int32 episodes = 3;
   float rating = 4;
 }
+
+message GetListRequest {
+  int32 page = 1;
+  int32 per_page = 2;
+}
+
+message GetListResponse {
+  repeated GetResponse items = 1;
+}
+
+
