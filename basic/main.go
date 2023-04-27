@@ -18,6 +18,7 @@ func main() {
 	fmt.Println("Get your tickets here to attend our conference")
 
 	for {
+		// var firtsName is a string variable
 		var firtsName string
 		var lastName string
 		var email string
