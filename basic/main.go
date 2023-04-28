@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	// this code about booking conference tickets with a basic golang knowledge
 	conferenceName := "Go Conference"
 	const conferenceTicket int = 50
 	var remainingTickets uint = 50
