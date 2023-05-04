@@ -24,16 +24,16 @@ func main() {
 		var email string
 		var userTickets uint
 		fmt.Println("enter your first name:")
-		fmt.Scan(&firtsName)
+		_, _ = fmt.Scan(&firtsName)
 
 		fmt.Println("enter your last name:")
-		fmt.Scan(&lastName)
+		_, _ = fmt.Scan(&lastName)
 
 		fmt.Println("enter your email:")
-		fmt.Scan(&email)
+		_, _ = fmt.Scan(&email)
 
 		fmt.Println("enter the number of tickets you want to book")
-		fmt.Scan(&userTickets)
+		_, _ = fmt.Scan(&userTickets)
 
 		isValidName := len(firtsName) > 2 && len(lastName) > 2
 		isValidEmail := strings.Contains(email, "@")
