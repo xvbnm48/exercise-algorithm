@@ -21,11 +21,27 @@ func main() {
 	q.Enqueue(1)
 	q.Enqueue(2)
 	q.Enqueue(3)
+	q.Enqueue(4)
+	q.Enqueue(9)
+
 	fmt.Println(q.items)
 
 	q.Dequeue()
 	fmt.Println(q.items)
 
 	q.Dequeue()
+	fmt.Println(q.items)
+
+	q.Dequeue()
+	fmt.Println(q.items)
+
+	q.Dequeue()
+	fmt.Println(q.items)
+
+	q.Dequeue()
+	fmt.Println(q.items)
+
+	q.Enqueue(1)
+	q.Enqueue(2)
 	fmt.Println(q.items)
 }

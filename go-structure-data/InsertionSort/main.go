@@ -7,6 +7,7 @@ func InsertionSort(arr []int) {
 	for i = 1; i < len(arr); i++ {
 		for j = 0; j < i; j++ {
 			if arr[j] > arr[i] {
+				// if arr index j is greater than arr index i, swap them
 				arr[j], arr[i] = arr[i], arr[j]
 			}
 		}
