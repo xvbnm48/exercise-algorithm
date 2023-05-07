@@ -18,4 +18,8 @@ func main() {
 
 	var input string
 	fmt.Scanln(&input)
+
+	angka := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	hasil := angka[0:5]
+	fmt.Printf("hasil %v", hasil)
 }

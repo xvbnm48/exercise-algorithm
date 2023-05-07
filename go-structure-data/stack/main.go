@@ -1,15 +1,15 @@
 package stack
 
-type StackItem struct {
+type StackItemValue struct {
 	// item is the value of the stack
 	item interface{}
 	// next is the pointer to the next item in the stack
-	next *StackItem
+	next *StackItemValue
 }
 
 type Stack struct {
 	// sp is the stack pointer
-	sp *StackItem
+	sp *StackItemValue
 	// depth is the number of items in the stack / depth is a length of the stack
 	depth uint64
 }
@@ -24,7 +24,7 @@ func New() *Stack {
 
 // Push adds an item to the stack
 func (stack *Stack) Push(item any) {
-	stack.sp = &StackItem{item: item, next: stack.sp}
+	stack.sp = &StackItemValue{item: item, next: stack.sp}
 	stack.depth++
 }
 
