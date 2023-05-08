@@ -25,6 +25,7 @@ func New() *Stack {
 // Push adds an item to the stack
 func (stack *Stack) Push(item any) {
 	stack.sp = &StackItemValue{item: item, next: stack.sp}
+	// depth is a length of the stack
 	stack.depth++
 }
 
