@@ -16,6 +16,7 @@ func fizbuzz(n int) {
 		} else if divBy5 {
 			currStr += "Buzz"
 		} else {
+			// if using string is a return type, use strconv.Itoa(i)
 			currStr = strconv.Itoa(i)
 		}
 		fmt.Println(currStr)
