@@ -39,6 +39,7 @@ func romanToInt(s string) int {
 }
 
 func main() {
+	// example
 	s := "XIV"
 	fmt.Println(romanToInt(s)) // Output: 1994``
 }
