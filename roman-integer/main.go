@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// this is a program for convert roman number to integer
 func romanToInt(s string) int {
 	m := map[byte]int{
 		'I': 1,
