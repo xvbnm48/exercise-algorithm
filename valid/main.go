@@ -13,13 +13,13 @@ func isValid(s string) bool {
 			l.PushFront(v)
 		} else if l.Len() > 0 {
 			e := l.Front()
-			if v == '}' && e.Value == '{' {
+			if v == '}' && e.Value != '{' {
 				return false
 			}
-			if v == ')' && e.Value == '(' {
+			if v == ')' && e.Value != '(' {
 				return false
 			}
-			if v == ']' && e.Value == '[' {
+			if v == ']' && e.Value != '[' {
 				return false
 			}
 			l.Remove(e)
@@ -36,6 +36,6 @@ func isValid(s string) bool {
 }
 
 func main() {
-	isValid("()[]{}")
-	fmt.Printf("hasil %v", isValid("()[]{}"))
+	fmt.Printf("hasil %v", isValid("["))
+
 }
