@@ -40,6 +40,6 @@ func romanToInt(s string) int {
 
 func main() {
 	// example
-	s := "XIV"
+	s := "XIII"
 	fmt.Println(romanToInt(s)) // Output: 1994``
 }
