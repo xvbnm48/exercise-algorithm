@@ -13,8 +13,13 @@ type linkedList struct {
 }
 
 func (l *linkedList) prepend(n *node) {
+	// make a new head with var name second
+	// and current head move to second
 	second := l.head
+	// n is a value from this func
+	// this n move to head as new head
 	l.head = n
+	// and current head is from n, and connection to next node. Next node is a previous head.
 	l.head.next = second
 	l.length++
 }
