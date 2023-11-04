@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"os"
+	"sort"
+)
 
 func binarySearch(list []int, item int) any {
 	low := 0
@@ -24,8 +29,13 @@ func binarySearch(list []int, item int) any {
 
 func main() {
 	list := []int{1, 3, 5, 7, 9}
-
+	sort.Ints(list)
 	result := binarySearch(list, 3)
+	logger := log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime)
+
+	logger.Println("Aplikasi telah dimulai.")
+	logger.Println("Ini adalah pesan log info.")
+	logger.Println("Aplikasi telah selesai.")
 	if result == nil {
 		fmt.Println("none")
 	} else {
