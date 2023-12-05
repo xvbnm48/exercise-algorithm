@@ -34,5 +34,6 @@ func main() {
 	// Test case 1
 	nums := []int{2, 2, 3, 4}
 	result := triangleNumber(nums)
+	// Expected result: 3
 	fmt.Println(result)
 }
