@@ -5,7 +5,7 @@ import "fmt"
 func containsDuplicate(nums []int) bool {
 	// make seen for store value in slice of array bool
 	seen := make(map[int]bool)
-	
+
 	// for loop for range of nums
 	for _, num := range nums {
 		fmt.Println("seen", seen)
@@ -18,6 +18,6 @@ func containsDuplicate(nums []int) bool {
 }
 
 func main() {
-	nums := []int{1,2,3}
+	nums := []int{1, 2, 3, 1}
 	fmt.Println(containsDuplicate(nums))
 }
