@@ -24,5 +24,5 @@ func fizbuzz(n int) {
 }
 
 func main() {
-	fizbuzz(100)
+	fizbuzz(25)
 }
